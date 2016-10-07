@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout-6</title>
+    <style>
+        div.Second-Row {
+            border: #ff4227 solid 1px;
+            width: 100%;
+            height: 250px;
+            position: relative;
+            bottom: 0px;
+            background-color: powderblue;
+        }
+        div.Thin-Box {
+            border: #ff4227 solid 1px;
+            margin: 0 auto;
+            height: 30px;
+            margin-top: 15px;
+            padding-left: 250px;
+            padding-right: 250px;
+            width: 125px;
+            position: absolute;
+            left: 300px;
+            background-color: aquamarine;
+        }
+
+
+        div.page {
+            position: relative;
+            width: 100%;
+            display: inline-flex;
+            clear: both;
+
+        }
+
+        div.banner, div.main-body, div.footer {
+            width: 100%;
+            position: absolute;
+            clear: both;
+            border: 1px solid black;
+
+        }
+
+        div.banner {
+            height: 150px;
+            top: 0px;
+            background-color: darkcyan;
+        }
+
+        div.main-body {
+            top: 150px;
+            height: 801px;
+            display: inline-flex;
+        }
+
+        div.left-nav {
+            height: 801px;
+            position: relative;
+            width: 10%;
+            border: 1px solid black;
+            background-color: lightsalmon;
+        }
+
+        div.First-Row {
+            clear: both;
+            border: 1px solid black;
+            display: inline-flex;
+            position: relative;
+            width: 100%;
+            height: 267px;
+        }
+
+        div.Box-1, div.Box-2, div.Box-3, div.Box-4 {
+            width: 25%;
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+            background-color: firebrick;
+        }
+
+        div.right-nav {
+            height: 801px;
+            position: relative;
+            width: 10%;
+            border: 1px solid black;
+            right: 0px;
+            background-color: lightsalmon;
+        }
+
+        div.main-content {
+            height: 801px;
+            width: 80%;
+            position: relative;
+        }
+
+        div.footer {
+            background-color: darkcyan;
+            height: 150px;
+            top: 950px;
+        }
+
+        div.topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+        div.topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        div.bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+        div.bottomright {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        div.center {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="banner">
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Center</div>
+    </div>
+    <div class="main-body">
+        <div class="left-nav">
+            <div class="topleft">Top Left</div>
+            <div class="topright">Top Right</div>
+            <div class="bottomleft">Bottom Left</div>
+            <div class="bottomright">Bottom Right</div>
+            <div class="center">Center</div>
+        </div>
+        <div class="main-content">
+            <div class="First-Row">
+                <div class="Box-1">
+                    <div class="topleft">Top Left</div>
+                    <div class="topright">Top Right</div>
+                    <div class="bottomleft">Bottom Left</div>
+                    <div class="bottomright">Bottom Right</div>
+                    <div class="center">Center</div>
+                </div>
+                <div class="Box-2">
+                    <div class="topleft">Top Left</div>
+                    <div class="topright">Top Right</div>
+                    <div class="bottomleft">Bottom Left</div>
+                    <div class="bottomright">Bottom Right</div>
+                    <div class="center">Center</div>
+                </div>
+                <div class="Box-3">
+                    <div class="topleft">Top Left</div>
+                    <div class="topright">Top Right</div>
+                    <div class="bottomleft">Bottom Left</div>
+                    <div class="bottomright">Bottom Right</div>
+                    <div class="center">Center</div>
+                </div>
+                <div class="Box-4">
+                    <div class="topleft">Top Left</div>
+                    <div class="topright">Top Right</div>
+                    <div class="bottomleft">Bottom Left</div>
+                    <div class="bottomright">Bottom Right</div>
+                    <div class="center">Center</div>
+                </div>
+
+            </div>
+            <div class="Second-Row">
+                <div class="BigBox-1">
+                    <div class="topleft">Top Left</div>
+                    <div class="topright">Top Right</div>
+                    <div class="bottomleft">Bottom Left</div>
+                    <div class="bottomright">Bottom Right</div>
+                    <div class="center">Center</div>
+                </div>
+                <div class="BigBox-2">
+                    <div class="topleft">Top Left</div>
+                    <div class="topright">Top Right</div>
+                    <div class="bottomleft">Bottom Left</div>
+                    <div class="bottomright">Bottom Right</div>
+                    <div class="center">Center</div>
+                </div>
+
+
+                <div class="Thin-Box">
+                    <div class="topleft">Top Left</div>
+                    <div class="topright">Top Right</div>
+                    <div class="bottomleft">Bottom Left</div>
+                    <div class="bottomright">Bottom Right</div>
+                    <div class="center">Center</div>
+                </div>
+            </div>
+        </div>
+        <div class="right-nav">
+            <div class="topleft">Top Left</div>
+            <div class="topright">Top Right</div>
+            <div class="bottomleft">Bottom Left</div>
+            <div class="bottomright">Bottom Right</div>
+            <div class="center">Center</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Center</div>
+    </div>
+</div>
+</body>
+</html>

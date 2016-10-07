@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function SmartWatch(company, model, price, color) {
+        this.company = company;
+        this.model = model;
+        this.price = price;
+        this.color = color;
+        this.trackSteps = function (numOfSteps) {
+            console.log("The Current Number of Steps Taken is"+numOfSteps);
+        }
+        this.checkTime = function (currentTime) {
+            console.log("The Current Time is"+currentTime);
+        }
+    }
+    function House(company, model, price, color) {
+        this.company = company;
+        this.model = model;
+        this.price = price;
+        this.color = color;
+        this.howOld = function (yearsOld) {
+            console.log("Our House is"+yearsOld);
+        }
+        this.occupationsInHouse = function (peopleLiving) {
+            console.log("The Number of People who live in our House is"+peopleLiving);
+        }
+        this.rooms = function (numOfRooms) {
+            console.log("The Number of Rooms In our House is"+numOfRooms);
+        }
+    }
+    function Computer(company, model, price, color) {
+        this.company = company;
+        this.model = model;
+        this.price = price;
+        this.color = color;
+        this.runApp = function (appName) {
+            console.log("Running"+appName);
+        }
+        this.openWebsite = function (siteName) {
+            console.log("Opening"+siteName);
+        }
+        this.installApp = function (appName) {
+            console.log("Installing"+appName);
+        }
+    }
+    function Car(company, model, price, color) {
+        this.company = company;
+        this.model = model;
+        this.price = price;
+        this.color = color;
+        this.speedAcceleratedTo = function (acceleratedSpeed) {
+            console.log("Accelerating to"+acceleratedSpeed);
+        }
+        this.maxSpeed = function (maximumSpeed) {
+            console.log("Reaching maximum speed of"+maximumSpeed);
+        }
+        this.slowSpeed = function (slowSpeed) {
+            console.log("Decelerating to"+slowSpeed);
+        }
+    }
+    function Phone(company, model, price, color) {
+        this.company = company;
+        this.model = model;
+        this.price = price;
+        this.color = color;
+        this.callANumber = function (numberToCall) {
+            console.log("Calling Phone #"+numberToCall);
+        }
+        this.installApp = function (appNameToInstall) {
+            console.log("Installing App with name:"+appNameToInstall);
+        }
+        this.sendText = function (numberToText, textMessage) {
+            console.log("Sending text to = "+numberToText+" text message is"+textMessage);
+        }
+    }
+    var myPhone = new Phone("Samsung", "Galaxy Express 3", "$78", "white");
+    console.log("My Phone is"+myPhone.model);
+    console.log("My Phone Color is :"+myPhone.color);
+    console.log("My Phone Costed"+myPhone.price);
+    console.log("My Phone Company is"+myPhone.company);
+    myPhone.installApp("Youtube");
+    myPhone.callANumber("246810");
+    myPhone.sendText("246810","LOL");
+
+    var dadPhone = new Phone("Nokia", "Lumia", "$100", "orange");
+    console.log("My Dad's Phone is"+dadPhone.model);
+    console.log("My Dad's Phone Color is :"+dadPhone.color);
+    console.log("My Dad's Phone Costed"+dadPhone.price);
+    console.log("My Dad's Phone Company is"+dadPhone.company);
+    dadPhone.installApp("Whatsapp");
+    dadPhone.sendText("12345","Hey, lets get Dinnu every video game in the world");
+    dadPhone.callANumber("12345");
+
+    var momPhone = new Phone("iPhone", "5s", "$500", "golden");
+    console.log("My Mom's Phone is"+momPhone.model);
+    console.log("My Mom's Phone Color is :"+momPhone.color);
+    console.log("My Mom's Phone Costed"+momPhone.price);
+    console.log("My Mom's Phone Company is"+momPhone.company);
+    momPhone.installApp("Facebook");
+    momPhone.callANumber("36912");
+    momPhone.sendText("36912","Lets go walking.");
+
+    var dadCar = new Car("Audi", "A4", "$30,000", "Dark Blue");
+    console.log("My Dad's Car is"+dadCar.model);
+    console.log("My Dad's Car Color is :"+dadCar.color);
+    console.log("My Dad's Car Costed"+dadCar.price);
+    console.log("My Dad's Car Company is"+dadCar.company);
+    dadCar.speedAcceleratedTo("64 mph");
+    dadCar.slowSpeed("13 mph");
+    dadCar.maxSpeed("250 mph");
+
+    var momCar = new Car("Toyota", "Sienna", "$60,000", "Dark Green");
+    console.log("My Mom's Car is"+momCar.model);
+    console.log("My Mom's Car Color is :"+momCar.color);
+    console.log("My Mom's Car Costed"+momCar.price);
+    console.log("My Mom's Car Company is"+momCar.company);
+    momCar.speedAcceleratedTo("54 mph");
+    momCar.slowSpeed("9 mph");
+    momCar.maxSpeed("130 mph");
+
+    var myComputer = new Computer("Origin", "Genesis", "$5,000", "Red & Black");
+    console.log("My Computer is the"+myComputer.model);
+    console.log("My Computer's Color is"+myComputer.color);
+    console.log("My Computer Costed"+myComputer.price);
+    console.log("My Computer's Company is"+myComputer.company);
+    myComputer.runApp("Overwatch");
+    myComputer.installApp("Overwatch");
+    myComputer.openWebsite("W3Schools");
+
+    var ourHouse = new House("Toll Brothers", "Saint Thomas", "$600.000", "Brownish");
+    console.log("Our House was made by"+ourHouse.company);
+    console.log("The Model of our House is a"+ourHouse.model);
+    console.log("The Price of our House is"+ourHouse.price);
+    console.log("The Theme of our House is"+ourHouse.color);
+    ourHouse.howOld("4 Years");
+    ourHouse.rooms("9");
+    ourHouse.occupationsInHouse("4");
+
+    var momSmartWatch = new SmartWatch("Fit Bit", "Flex", "$80", "Purple");
+    console.log("Mom's Smart Watch is a"+momSmartWatch.company);
+    console.log("Mom's Fit Bit is a"+momSmartWatch.model);
+    console.log("Mom's Fit Bit costed"+momSmartWatch.price);
+    console.log("Mom's Fit Bit is"+momSmartWatch.color);
+    momSmartWatch.checkTime("8:56");
+    momSmartWatch.trackSteps("2879");
+
+</script>
+
+</body>
+</html>

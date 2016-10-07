@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function lightOn() {
+            var imageElement = document.getElementById('myImage');
+            imageElement.src='http://www.w3schools.com/js/pic_bulbon.gif'
+        }
+        function lightOff() {
+            var imageElement = document.getElementById('myImage');
+            imageElement.src='http://www.w3schools.com/js/pic_bulboff.gif'
+        }
+    </script>
+
+</head>
+<body>
+<h1>Lightbulb Javascript.</h1>
+<img id="myImage" src="http://www.w3schools.com/js/pic_bulboff.gif" style="width: 100px">
+<button onclick="lightOn()">ON</button>
+<button onclick="lightOff()">OFF</button>
+</body>
+</html>

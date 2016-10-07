@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function showDateTime() {
+            console.log('In showDateTime')
+            var now = new Date();
+            var element = document.getElementById("dateTime");
+            element.innerHTML = now.toDateString();
+        }
+        function clearDateTime() {
+            console.log('In clearDateTime')
+            var element = document.getElementById("dateTime");
+            element.innerHTML = "";
+
+
+        }
+    </script>
+</head>
+<body>
+<h1>Click button to display todays date/time.</h1>
+<p id="dateTime"></p>
+<input type="button" onclick="showDateTime()" value="Show Date And Time"/>
+<input type="button" onclick="clearDateTime()" value="Clear Date And Time"/>
+</body>
+</html>

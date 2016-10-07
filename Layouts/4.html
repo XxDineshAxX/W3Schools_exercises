@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Layout-5
+    </title>
+    <style>
+
+
+        div#webpage {
+            position: relative;
+            width: 100%;
+            display: inline-flex;
+            clear: both;
+
+        }
+
+        div.header, div.mainBody, div.footer {
+            width: 100%;
+            position: absolute;
+            clear: both;
+            border: 1px solid black;
+
+        }
+
+        div.header {
+            height: 150px;
+            top: 0px;
+
+        }
+
+        div.mainBody {
+            top: 150px;
+            height: 801px;
+            display: inline-flex;
+        }
+
+        div#leftNavBar {
+            height: 801px;
+            position: relative;
+            width: 10%;
+            border: 1px solid black;
+
+        }
+
+        div#First-Row, div#Second-Row, div#Third-Row {
+            clear: both;
+            height: 267px;
+            border: 1px solid black;
+            display: inline-flex;
+            position: relative;
+            width: 100%;
+        }
+        div#Box1,div#Box2,div#Box3{
+            width: 33.33%;
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+
+        }
+        div#Box4,div#Box6{
+            width: 25%;
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+        }
+        div#Box5{
+            width: 50%;
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+        }
+        div#Box7,div#Box8,div#Box9,div#Box10{
+            width: 25%;
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+
+        }
+        div.Top-Left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 16px;
+        }
+
+        div.Top-Right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 16px;
+        }
+
+        div.Bottom-Left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 16px;
+        }
+
+        div.Bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 16px;
+        }
+
+        div.Center {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        div#rightNavBar {
+            height: 801px;
+            position: relative;
+            width: 10%;
+            border: 1px solid black;
+            right: 0px;
+        }
+
+
+        div#mainContent {
+            height: 801px;
+            width: 80%;
+            position: relative;
+        }
+
+        div.footer {
+
+            height: 150px;
+
+            top: 950px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="webpage">
+    <div class="header">
+        <div class="Top-Right">Top-Right</div>
+        <div class="Bottom-right">Bottom-Right</div>
+        <div class="Center">Center</div>
+        <div class="Bottom-Left">Bottom-Left</div>
+        <div class="Top-Left">Top-Left</div>
+    </div>
+
+    <div class="mainBody">
+
+        <div id="leftNavBar">
+            <div class="Top-Right">Top-Right</div>
+            <div class="Bottom-right">Bottom-Right</div>
+            <div class="Center">Center</div>
+            <div class="Bottom-Left">Bottom-Left</div>
+            <div class="Top-Left">Top-Left</div>
+        </div>
+        <div id="mainContent">
+            <div id="First-Row">
+
+                <div id="Box1">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+                <div id="Box2">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+                <div id="Box3">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+
+            </div>
+            <div id="Second-Row">
+                <div id="Box4">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+                <div id="Box5">
+                    Box-5<div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+                <div id="Box6">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+            </div>
+            <div id="Third-Row">
+                <div id="Box7">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+                <div id="Box8">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+                <div id="Box9">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+                <div id="Box10">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </div>
+            </div>
+
+        </div>
+        <div id="rightNavBar">
+            <div class="Top-Right">Top-Right</div>
+            <div class="Bottom-right">Bottom-Right</div>
+            <div class="Center">Center</div>
+            <div class="Bottom-Left">Bottom-Left</div>
+            <div class="Top-Left">Top-Left</div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="Top-Right">Top-Right</div>
+        <div class="Bottom-right">Bottom-Right</div>
+        <div class="Center">Center</div>
+        <div class="Bottom-Left">Bottom-Left</div>
+        <div class="Top-Left">Top-Left</div>
+    </div>
+</div>
+</body>
+</html>

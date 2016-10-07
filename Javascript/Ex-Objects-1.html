@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+</head>
+<body>
+
+<header id="w3-header w3-blue">Variables</header>
+<p id="ex1">test</p>
+<p id="ex2"></p>
+<p id="ex3"></p>
+<p id="ex4"></p>
+<p id="ex5"></p>
+<p id="ex6"></p>
+<p id="ex7"></p>
+<p id="ex8"></p>
+<p id="ex9"></p>
+<script>
+    var firstName = "Dinesh";
+    var lastName = "Angadipeta";
+    var age = 14.2;
+    var wt = 98.4;
+    var ht = 5.7;
+    var houseNo = 1001;
+    var noOfCars = 0;
+    var isMarried = false;
+    var isGraduate = false;
+    var fullName = firstName + " " + lastName;
+    var ageAndWeight = wt + ht;
+    var myNamePlusAge = firstName + " " + age;
+    var myNameAndMarriageStatus = firstName + " " + isMarried;
+    var myHouseNoAndAge = houseNo + age;
+    var myAgePlusName = age + firstName;
+    var fullNameReversed = lastName + " " + firstName;
+    var myNamePlusAgeReversed = age + " " + firstName;
+    console.log("First Name +Last Name" + fullName);
+    console.log("Is Married" + isMarried);
+    document.getElementById("ex1").innerHTML = "My Name Is  " + fullName;
+    console.log("Age and Weight is " + ageAndWeight);
+    document.getElementById("ex2").innerHTML = "My Age and Height Combined is " + ageAndWeight;
+    console.log("First Name and Age" + myNamePlusAge);
+    document.getElementById("ex3").innerHTML = "My First Name and Age Combined is " + myNamePlusAge;
+    console.log("First Name and Marriage Status" + myNameAndMarriageStatus);
+    document.getElementById("ex4").innerHTML = "My First Name and Marriage Status is " + myNameAndMarriageStatus;
+    console.log("My Age and House Number Combined" + myHouseNoAndAge);
+    document.getElementById("ex5").innerHTML = "My Age and House Number Combined is " + myHouseNoAndAge;
+    console.log("My Age Combined with my First Name" + myAgePlusName);
+    document.getElementById("ex6").innerHTML = "My Age Combined With My First Name "  + myAgePlusName;
+    console.log("Last Name +First Name" + fullNameReversed);
+    document.getElementById("ex7").innerHTML = "My Name Reversed is  " + fullNameReversed;
+    console.log("My Age and First Name" + myNamePlusAgeReversed);
+    document.getElementById("ex8").innerHTML = "My Age Plus Name Combined is " + myNamePlusAgeReversed
+
+
+</script>
+</body>
+</html>

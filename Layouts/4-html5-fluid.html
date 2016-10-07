@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Layout-5
+    </title>
+    <style>
+        .header, .footer, .leftNavBar, .rightNavBar, .Box1, .Box2, .Box3, .Box4, .Box5, .Box6, .Box7, .Box8, .Box9, .Box10 {
+            background: linear-gradient(red, white, blue);
+        }
+
+        div.webpage {
+            position: relative;
+            display: inline-flex;
+            clear: both;
+
+        }
+
+        .header, .mainBody, .footer {
+            position: absolute;
+            clear: both;
+            border: 1px solid black;
+
+        }
+
+        .header {
+            height: 150px;
+            top: 0px;
+
+        }
+
+        .mainBody {
+            top: 150px;
+            height: 801px;
+            display: inline-flex;
+        }
+
+        .leftNavBar {
+            height: 801px;
+            position: relative;
+            border: 1px solid black;
+
+        }
+
+        .First-Row, .Second-Row, .Third-Row {
+            clear: both;
+            height: 267px;
+            border: 1px solid black;
+            display: inline-flex;
+            position: relative;
+        }
+
+        .Box1, .Box2, .Box3 {
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+
+        }
+
+        .Box4, .Box6 {
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+        }
+
+        .Box5 {
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+        }
+
+        .Box7, .Box8, .Box9, .Box10 {
+            position: relative;
+            border: 1px solid black;
+            height: 267px;
+
+        }
+
+        div.Top-Left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 16px;
+        }
+
+        div.Top-Right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 16px;
+        }
+
+        div.Bottom-Left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 16px;
+        }
+
+        div.Bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 16px;
+        }
+
+        div.Center {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .rightNavBar {
+            height: 801px;
+            position: relative;
+            border: 1px solid black;
+            right: 0px;
+        }
+
+        .mainContent {
+            height: 801px;
+            position: relative;
+        }
+
+        .footer {
+
+            height: 150px;
+
+            top: 950px;
+
+        }
+
+        .col-1 {
+            width: 8.333%;
+        }
+
+        .col-2 {
+            width: 16.666%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.333%;
+        }
+
+        .col-5 {
+            width: 41.666%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.333%;
+        }
+
+        .col-8 {
+            width: 66.666%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.333%;
+        }
+
+        .col-11 {
+            width: 91.666%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="webpage col-12">
+    <header class="header col-12">
+        <div class="Top-Right">Top-Right</div>
+        <div class="Bottom-right">Bottom-Right</div>
+        <div class="Center">Center</div>
+        <div class="Bottom-Left">Bottom-Left</div>
+        <div class="Top-Left">Top-Left</div>
+    </header>
+
+    <section class="mainBody col-12">
+
+
+        <nav class="leftNavBar col-2">
+            <div class="Top-Right">Top-Right</div>
+            <div class="Bottom-right">Bottom-Right</div>
+            <div class="Center">Center</div>
+            <div class="Bottom-Left">Bottom-Left</div>
+            <div class="Top-Left">Top-Left</div>
+        </nav>
+
+
+        <section class="mainContent col-8">
+            <section class="First-Row col-12">
+                <section class="Box1 col-6">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+                <section class="Box2 col-6">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+            </section>
+            <section class="Second-Row col-12">
+                <section class="Box3 col-3">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+                <section class="Box4 col-6">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+                <section class="Box5 col-3">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+            </section>
+            <section class="Third-Row col-12">
+                <section class="Box6 col-3">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+                <section class="Box7 col-3">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+                <section class="Box8 col-3">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+                <section class="Box9 col-3">
+                    <div class="Top-Right">Top-Right</div>
+                    <div class="Bottom-right">Bottom-Right</div>
+                    <div class="Center">Center</div>
+                    <div class="Bottom-Left">Bottom-Left</div>
+                    <div class="Top-Left">Top-Left</div>
+                </section>
+            </section>
+        </section>
+
+        <nav class="rightNavBar col-2">
+            <div class="Top-Right">Top-Right</div>
+            <div class="Bottom-right">Bottom-Right</div>
+            <div class="Center">Center</div>
+            <div class="Bottom-Left">Bottom-Left</div>
+            <div class="Top-Left">Top-Left</div>
+        </nav>
+
+
+    </section>
+    <footer class="footer col-12">
+        <div class="Top-Right">Top-Right</div>
+        <div class="Bottom-right">Bottom-Right</div>
+        <div class="Center">Center</div>
+        <div class="Bottom-Left">Bottom-Left</div>
+        <div class="Top-Left">Top-Left</div>
+    </footer>
+</div>
+</body>
+</html>

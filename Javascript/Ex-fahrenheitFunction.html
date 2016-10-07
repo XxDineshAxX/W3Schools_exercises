@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script>
+        function toCelsius() {
+            console.log('In convert function()....')
+            var far = Number (document.getElementById("far").value);
+            console.log("input is "+far);
+            var centigrade =      convertToCentigrade(far);
+            console.log("Value is centigrade"+centigrade);
+            document.getElementById("demo").innerHTML="Fahrenheit"+far +" , Value in Centigrade "+centigrade;
+        }
+        function toFahrenheit() {
+            console.log('In convert function()....')
+            var far = Number (document.getElementById("far").value);
+            console.log("input is "+cen);
+            var centigrade =      convertToFahrenheit(cen);
+            console.log("Value is fahrenheit"+far);
+            document.getElementById("demo").innerHTML="Centigrade"+cen +" , Value in fahrenheit "+far;
+        }
+        function clearValue() {
+            document.getElementById("demo").innerHTML = "";
+            document.getElementById("far").value = "";
+
+        }
+        function inCel(cen){
+            return (1.8*cen+32)
+        }
+    </script>
+</head>
+<body>
+<div class="w3-container w3-yellow">
+    <h2>Temp Convertion.</h2>
+</div>
+<div class="w3-container w3-green">
+    <p id="demo"></p>
+</div>
+<p class="w3-container">
+    <p class="w3-row">
+    <label>Value:</label>
+    <input id="fah" class="w3-input" type="text">
+</p>
+<button class="w3-btn w3-yellow"
+<button type="button" onclick="toCelsius()">Convert to Celsius</button>
+<button type="button" onclick="toFahrenheit()">Convert to Fahrenheit.</button>
+<button type="button" onclick="clearValue()">Clear</button>
+</body>
+</html>
